@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Testing functions</title>
+</head>
+<body>
+    <script>
+        function add7(x) {
+            return x + 7;
+        }
+
+        function multiply(x, y) {
+            return x * y;
+        }
+
+        function capitalize(text) {
+            const lowerCaseText = text.toLowerCase();
+            const firstLetter = text.slice(0, 1);
+            const restOfText = text.slice(1, text.length);
+            return firstLetter.toUpperCase() + restOfText;
+        }
+
+        function lastLetter(text) {
+            return text.at(-1);
+        }
+
+        console.log(add7(10));
+        console.log(multiply(2, 3));
+        console.log(capitalize("hello"));
+        console.log(lastLetter("Hello World"));
+    </script>
+</body>
+</html>
