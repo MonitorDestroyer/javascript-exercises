@@ -36,3 +36,14 @@ function filterRange(arr, lowerBounds, upperBounds) {
     });
 }
 
+function filterRangeInPlace(arr, lowerBounds, upperBounds) {
+    for(let i = 0; i < arr.length; i++) {
+        if(arr[i] >= lowerBounds && arr[i] <= upperBounds) {
+
+        } else {
+            arr.splice(i, 1);
+            i--;
+        }
+    }
+}
+
