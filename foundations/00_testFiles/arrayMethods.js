@@ -27,3 +27,12 @@ function camelizeSolution(text) {
         .join("");
 }
 
+function filterRange(arr, lowerBounds, upperBounds) {
+    return arr.filter((num) => {
+        if(num >= lowerBounds && num <= upperBounds) {
+            return true;
+        }
+        return false;
+    });
+}
+
